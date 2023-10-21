@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="stylesheet" href="index.css">
+  
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Student Buddy</title>
+  
+</head>
+<body>
+  
+    <nav class="navbar">
+      <div class="navbar-logo">
+        <img src="https://i.postimg.cc/SsC7CWGP/Screenshot-2023-06-10-183445.png" alt="Logo"  >
+      </div>
+      <div class="navbar-title">
+        Student Buddy
+      </div>
+      <ul class="navbar-nav">
+        <a class="navbar-link" href="home.html">Home</a>
+        <a class="navbar-link" href="profile.html">Profile</a>
+        <a class="navbar-link" href="#contact">Contact</a>
+        <a class="navbar-link" href="login.html">Sign Out</a>
+      </ul>
+    </nav>
+    
+    <div id="mySidebar" class="sidebar" onmouseover="toggleSidebar()" onmouseout="closeSide()">
+      <a href="#" class="menu">☰</a>
+      
+      <a  href="courses.html"><img src="https://th.bing.com/th/id/R.20e216ff91585df62ce54927c2bcff6b?rik=lNV1C6cyb%2fYJ%2bQ&riu=http%3a%2f%2fcdn.onlinewebfonts.com%2fsvg%2fimg_384157.png&ehk=FMySwrNRwDAN2rgx2OPPvaA8MGe0jTR%2bsrxCkzgMUb8%3d&risl=&pid=ImgRaw&r=0" width="35px" height="35px"> Courses</a>
+      <a  href="profile.html"><img src="https://img.icons8.com/?size=512&id=7820&format=png" width="40px" height="35px">Profile</a>
+      <a  href="contact.html"><img src="https://img.icons8.com/?size=512&id=2817&format=png" width="40px" height="35px"> Contact</a>
+      <a  href="library.html"><img src="https://img.icons8.com/?size=512&id=23662&format=png"width="40px" height="35px">Library</a>
+      <a  href="games.html"><img src="https://img.icons8.com/?size=512&id=51F0o6bWwYMt&format=png"width="40px" height="35px">Games</a>
+      
+     </div>
+    
+      
+  <div id="content" class="content">
+  
+    <div class="Aboutus">
+      
+      <div class="texts">
+        <h2>About Us</h2><br>
+        <p class="about">Student Buddy is a student friendly website that assists students in every aspect of studies and enhances to have a happy learning . Website  provides buddies with the facility for  programming courses, faculty info  of highly professional and well experienced, and also with the facility of E-library which consists of many books with different kind of genres . To your surprise, website also incudes a page for playing games (but for a limited period) . </p>
+      </div>
+      <img src="https://i.pinimg.com/564x/fd/b9/90/fdb990ba2aa640d3b49955a936bf8b1d.jpg">
+    </div>
+  <div class="library">
+      <h2>Our Library</h2>
+      <div class="texts">
+      <p>Explore our extensive library of  books, articles, and research papers. Enhance your knowledge with our wide range of materials available for free.</p></div>
+    <div class="btn1"> <a href="library.html" class="btn">Browse Library</a></div> 
+  </div>
+  <div class="courses">
+    <div class="texts">
+      <h2>Our Courses</h2>
+      <p>Discover our diverse range of courses designed to help you expand your skills and knowledge. From programming to business, we offer courses for students of all levels.</p></div>
+    <div class="btn1" > <a href="courses.html" class="btn">Explore Courses</a></div>
+  </div>
+  <div class="contact" id="contact">
+    <h2>Contact Us</h2>
+    <div class="texts">
+    <p>Get in touch with us for any queries or feedback. We are available 24/7 to assist you. Fill out the form below or reach out to us via email or phone.</p></div>
+    <form class="colorful-form">
+      <div class="form-group">
+        <label class="form-label" for="name">Name:</label>
+        <input required="" placeholder="Enter your name" class="form-input" type="text">
+      </div>
+      <div class="form-group">
+        <label class="form-label" for="email">Email:</label>
+        <input required="" placeholder="Enter your email" class="form-input" name="email" id="email" type="email">
+      </div>
+      <div class="form-group">
+        <label class="form-label" for="message">Message:</label>
+        <textarea required="" placeholder="Enter your message" class="form-input" name="message" id="message"></textarea>
+      </div>
+      <button class="form-button" type="submit">Submit</button>
+    </form>
+    
+</main>
+<footer>
+  <p>&copy; 2023 Student Buddy. All rights reserved.</p>
+</footer>
+</body>
+</html>
+  <script>
+    function toggleSidebar() {
+      console.log("opening sidebar");
+      document.getElementById("mySidebar").style.width = "180px";
+      document.getElementById("content").style.marginLeft = "180px";
+      
+     }
+      function closeSide(){
+        console.log("closing sidebar");
+        document.getElementById("mySidebar").style.width = "76px";
+        document.getElementById("content").style.marginLeft = "76px";
+      }
+
+      
+
+  </script>
+</body>
+</html>
