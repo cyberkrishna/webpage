@@ -1,0 +1,239 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar {
+  top: -5px;
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  height: 100px;
+  border-bottom: 1px solid gray;
+  position: fixed;
+  width: 100%;
+  background-color: #fff;
+}
+
+.navbar-logo img {
+  
+  width: 100px;
+  left: -2;
+}
+.navbar-title {
+  font-weight: bold;
+  font-style: normal;
+  font-size: 50px;
+  font-family: 'Brush Script MT', cursive;
+  margin-left: 10px;
+}
+
+.navbar-nav {
+  margin-right: 20px;
+  display: flex;
+  justify-content: flex-end;
+  flex-grow: 1;
+}
+.navbar-link {
+margin: 0 10px;
+text-decoration: none;
+color: black;
+background-color: #ccc;
+padding: 5px 10px;
+border-radius: 5px;
+}
+
+.navbar-link:hover {
+background-color: #999; 
+color: white; 
+text-decoration: none;
+}
+
+.menu{
+  font-size: larger;
+  text-decoration: none;
+  color: black;
+  display: flex;
+  justify-content: center;
+}
+.sidebar {
+  height: 100%;
+  width: 76px;
+  position: fixed;
+  top: 98px;
+  left: 0;
+  background-color: lightgreen;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+  white-space: nowrap;
+}
+
+.sidebar a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: black;
+  display: block;
+  transition: 0.3s;
+  
+}
+
+.sidebar a:hover {
+  color: #f1f1f1;
+}
+.content {
+position: relative;
+  top: 100px;
+  margin-left: 76px;
+  transition: 0.5s;
+}
+.library{
+  width: 100%;
+  padding: 30px;
+  height: 350px;
+  margin-top: 20px;
+  background: url("https://th.bing.com/th/id/OIP.VjArOnUk_9StVtXh2MHM3QHaEu?pid=ImgDet&rs=1");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  color: #f1f1f1;
+  
+  font-family: Arial, Helvetica, sans-serif;
+  backface-visibility: 0.7;
+  border-radius: 10px;
+  font-size: larger;
+
+  
+}
+.library a{
+  text-decoration: none;
+}
+.courses{
+  padding: 30px;
+  margin-top: 20px;
+  background: url("https://th.bing.com/th/id/R.036807c79171bf162fea4a498116c46b?rik=7708qKZmYxKF6g&riu=http%3a%2f%2fleadscolleges.com.pk%2fimages%2fCourses+Offered.png&ehk=yggea1zgp3%2f8GzpmblETpPxEBKvjONB2v52E6i9CxSU%3d&risl=&pid=ImgRaw&r=0");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 350px;
+  
+}
+.colorful-form {
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #f5f5f5;
+  border-radius: 10px;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 5px;
+  color: #333;
+}
+
+.form-input {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  background-color: #fff;
+  color: #333;
+  border-radius: 5px;
+}
+
+textarea.form-input {
+  height: 100px;
+}
+
+.form-button {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  background-color: #ff6f69;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.form-button:hover {
+  background-color: #ff5f59;
+}
+footer{
+  align-items: last baseline;
+  text-align: center;
+  background-color: #999;
+}
+.Aboutus{
+  display: flex;
+  background: linear-gradient(454deg,#ffd989,#fff);
+  width: 100%;
+  padding: 30px;
+  height: 350px;
+  margin-top: 20px;
+  color: #f1f1f1;
+  font-family: Arial, Helvetica, sans-serif;
+  backface-visibility: 0.7;
+  border-radius: 10px;
+  font-size: larger;
+  margin-bottom: 0;
+}
+.Aboutus img{
+ float: right;
+ margin-right:10px;
+ height: 300px;
+ width: 50%;
+ border-radius: 30px;
+}
+.texts{
+  color:white;
+  position:relative;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size:large;
+  width: 45%;
+  padding:25px;
+  top:10px;
+  font-weight:600;
+}
+
+.about{
+  font-family:Georgia, 'Times New Roman', Times, serif;
+  color:white;
+  font-weight:600;
+}
+.btn1{
+  text-decoration:none;
+  text-align: center;
+width: 300px;
+font-size: 1.7rem;
+  display: inline-block;
+  background: orange;
+  color: white;
+  box-shadow: 5px;
+  border-radius: 5rem;
+  padding: 0.9rem 3rem;
+  margin-top: 1rem;
+  z-index: 0;
+  position: relative;
+  overflow: hidden;
+  transition-property: width ;
+  transition-duration: .3s;
+  transition-timing-function: linear;
+
+}
+
+.btn1:hover{
+
+width: 350px;
+}
+a{
+  text-decoration: none;
+}
